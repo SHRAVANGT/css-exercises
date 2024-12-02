@@ -1,30 +1,32 @@
-body{
-  font-family:Arial, Helvetica, sans-serif;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .para,
 .small-para {
-  color: hsl(0, 0%, 0%);
-  font-weight: 800;
+    color: hsl(0, 0%, 0%);
+    font-weight: 800;
 }
 
 .para {
-  font-size: 22px;
+    font-size: 22px;
 }
 
 .button {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
 }
 
 div.text {
-  color: rgb(0, 0, 0);
-  font-weight: 100;
-  font-size: 22px;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    font-size: 22px;
 }
 
+
 /* SOLUTION */
+
 
 /* 
   For the following rule, we removed it from its original position in the file:
@@ -45,9 +47,10 @@ div.text {
 */
 
 .small-para {
-  font-size: 14px;
-  font-weight: 800;
+    font-size: 14px;
+    font-weight: 800;
 }
+
 
 /* 
   For the following rule we removed the original .confirm selector:
@@ -70,10 +73,11 @@ div.text {
 */
 
 #confirm-button {
-  background: green;
-  color: white;
-  font-weight: bold;
+    background: green;
+    color: white;
+    font-weight: bold;
 }
+
 
 /*
   For the following rule we first removed it from its original position in the file: 
@@ -87,7 +91,12 @@ div.text {
   Then we added another selector to create a descendant combinator. If we only created a descendant combinator, the specificity would be tied with the
   div.text selector and it would come down to rule order, and if we only moved it, the div.text selector would still have a higher specificity.
   
-  Another solution would be to keep the rule where it was and just replace the div selector with the .text selector:
+  Another solution would be to keep 
+.child {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 14px;
+}the rule where it was and just replace the div selector with the .text selector:
 
   .text .child {
     color: rgb(0, 0, 0);
@@ -97,7 +106,7 @@ div.text {
 */
 
 div .child {
-  color: rgb(0, 0, 0);
-  font-weight: 800;
-  font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 14px;
 }
